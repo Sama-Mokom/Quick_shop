@@ -5,6 +5,12 @@
     --accent-color: #e74c3c;
     --text-color: #333;
     --light-gray: #f5f5f5;
+    --bg-word: #5134ff;
+    --bg-word-2:#0000FF ;
+    --bg-word-3:#89CFF0 ;
+    --bg-word-4:#00FFFF ;
+    --bg-word-5:#0047AB ;
+    --bg-word-5:#1434A4 ;
     --border-radius: 8px;
     --box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -76,9 +82,61 @@ nav a:hover, nav a.active {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+p::after {
+    background: var(--bg-word);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 4px;
+    content: "";
+    animation: 10s swap linear infinite;
+}
+
+@keyframes swap {
+    0% {
+
+    }
+    10%{
+
+    }
+    20% {
+
+    }
+    30% {
+
+    }
+    40%{
+
+    }
+    50% {
+
+    }
+    60% {
+
+    }
+    70% {
+
+    }
+    80% {
+
+    }
+    90% {
+
+    }
+    100% {
+        
+    }
+}
 
 .profile-image img {
-    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 45%;
     box-shadow: var(--box-shadow);
 }
 
@@ -139,8 +197,7 @@ nav a:hover, nav a.active {
 }
 
 .item-card:hover {
-    transform: translateY(-10
-    px);
+    transform: translateY(-10px);
 }
 
 .item-card img {
