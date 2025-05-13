@@ -14,7 +14,6 @@ submitBtn.addEventListener('click',
         if (email.value && email.value.split('@').length !== 2) {
             alert("Email address invalid");
         }
-
         if(price.value <= 0){
             alert("Invalid price!");
         
