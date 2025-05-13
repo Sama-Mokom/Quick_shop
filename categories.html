@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - 20-Year-Old's Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sama's Shopping List</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="add.html">Add Item</a></li>
+                    <li><a href="stats.html">Stats</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="filter-bar">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="tech">Tech</option>
+                    <option value="clothes">Clothes</option>
+                </select>
+            </div>
+
+            <div class="items-grid">
+                <!-- Groceries -->
+                <div class="item-card" data-category="groceries">
+                    <img src="https://via.placeholder.com/150" alt="Milk">
+                    <h3>Milk</h3>
+                    <p class="category">Groceries</p>
+                    <p class="price">$3.99</p>
+                    <span class="status not-bought">Not Bought</span>
+                </div>
+
+                <div class="item-card" data-category="groceries">
+                    <img src="https://via.placeholder.com/150" alt="Bread">
+                    <h3>Bread</h3>
+                    <p class="category">Groceries</p>
+                    <p class="price">$2.49</p>
+                    <span class="status bought">Bought</span>
+                </div>
+
+                <!-- Tech -->
+                <div class="item-card" data-category="tech">
+                    <img src="https://via.placeholder.com/150" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p class="category">Tech</p>
+                    <p class="price">$699.99</p>
+                    <span class="status not-bought">Not Bought</span>
+                </div>
+
+                <div class="item-card" data-category="tech">
+                    <img src="https://via.placeholder.com/150" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p class="category">Tech</p>
+                    <p class="price">$1,299.99</p>
+                    <span class="status bought">Bought</span>
+                </div>
+
+                <!-- Clothes -->
+                <div class="item-card" data-category="clothes">
+                    <img src="https://via.placeholder.com/150" alt="Jeans">
+                    <h3>Jeans</h3>
+                    <p class="category">Clothes</p>
+                    <p class="price">$49.99</p>
+                    <span class="status not-bought">Not Bought</span>
+                </div>
+
+                <div class="item-card" data-category="clothes">
+                    <img src="https://via.placeholder.com/150" alt="T-Shirt">
+                    <h3>T-Shirt</h3>
+                    <p class="category">Clothes</p>
+                    <p class="price">$19.99</p>
+                    <span class="status bought">Bought</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 20-Year-Old's Shopping List. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
