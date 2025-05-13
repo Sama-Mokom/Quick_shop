@@ -10,9 +10,8 @@ submitBtn.addEventListener('click',
         if(email.value.trim() === ""){
             alert("Email Field must be filled!");
         }
-// melvine@gmail.com: value = ['melvine', 'gmail.com']
-console.log({ emailParts:  email.value.split('@') })
-        if (email.value.split('@').length !== 2) {
+// mokom@gmail.com: value = ['mokom', 'gmail.com']
+        if (email.value && email.value.split('@').length !== 2) {
             alert("Email address invalid");
         }
 
