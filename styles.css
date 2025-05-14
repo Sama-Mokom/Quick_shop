@@ -82,12 +82,12 @@ nav a:hover, nav a.active {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
-p {
+.carousel {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-p::after {
+.carousel ::after {
     background: var(--bg-word);
     color: white;
     padding: 10px;
@@ -99,37 +99,28 @@ p::after {
 
 @keyframes swap {
     0% {
-
+        content: "Laptops";
+        background:var(--bg-word-2) ;
     }
-    10%{
-
+    20%{
+        content: "Phones";
+        background:var(--bg-word-5) ;
     }
-    20% {
-
-    }
-    30% {
-
-    }
-    40%{
-
-    }
-    50% {
-
+    40% {
+        content: "Accessories";
+        background:var(--bg-word-4) ;
     }
     60% {
-
+        content: "Clothes";
+        background:var(--bg-word-3) ;
     }
-    70% {
-
-    }
-    80% {
-
-    }
-    90% {
-
+    80%{
+        content: "Groceries";
+        background: var(--bg-word);
     }
     100% {
-        
+        content: "Laptops";
+        background:var(--bg-word-2) ;
     }
 }
 
